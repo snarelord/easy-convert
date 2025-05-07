@@ -1,14 +1,6 @@
 import React, { useState } from "react";
 import styles from "./App.module.css";
 
-declare global {
-  interface Window {
-    electronAPI?: {
-      convertFiles: (files: File[]) => void;
-    };
-  }
-}
-
 const App: React.FC = () => {
   const [files, setFiles] = useState<File[]>([]);
 
