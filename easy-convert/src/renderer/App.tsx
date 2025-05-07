@@ -20,6 +20,8 @@ const App: React.FC = () => {
     window.electronAPI?.convertFiles(files); // IPC bridge
   };
 
+  // use effect for status updates success/failure messages
+
   return (
     <div className={styles.app}>
       <h1 className={styles.title}>WAV to MP3 Converter</h1>
